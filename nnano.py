@@ -29,7 +29,7 @@ if length > 1:
     shortened_file_name = split_file_path[len(split_file_path)-1]
     # Generate json data
     data = {
-        'path': file_name,
+        'path': shortened_file_name,
         'text': file_text
     }
 
