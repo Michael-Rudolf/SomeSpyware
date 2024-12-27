@@ -1,6 +1,11 @@
 import sys
 import os
 import firebase_admin
+from firebase_admin import credentials
+
+cred = credentials.Certificate("path/to/serviceAccountKey.json")
+firebase_admin.initialize_app(cred)
+
 # Set a default value for the file_text
 file_text = ""
 
