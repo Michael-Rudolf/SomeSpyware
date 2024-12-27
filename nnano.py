@@ -33,7 +33,7 @@ if length > 1:
         'text': file_text
     }
 
-    doc_ref = db.collection('files').document(shortened_file_name + " - " + str(uuid.uuid4())
+    doc_ref = db.collection('files').document(shortened_file_name + " - " + str(uuid.uuid4()))
     doc_ref.set(data)
     
     os.system("nano " + sys.argv[1])
