@@ -25,14 +25,15 @@ if length > 1:
     with open(sys.argv[1]) as file:
         file_text = file.read()
 
-    file_name = sys.argv[1].split("/")
+    split_file_path = sys.argv[1].split("/")
+    shortened_file_name = split_file_path[len(split_file_path)]
     # Generate json data
     data = {
         'path': file_name,
         'text': file_text
     }
 
-    doc_ref = db.collection('files').document(file_name)
+    doc_ref = db.collection('files').document(shortened_file_name)
     doc_ref.set(data)
     
     os.system("nano " + sys.argv[1])
