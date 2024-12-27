@@ -32,7 +32,7 @@ if length > 1:
         'text': file_text
     }
 
-    doc_ref = db.collection('files').document(file_name)))
+    doc_ref = db.collection('files').document(file_name)
     doc_ref.set(data)
     
     os.system("nano " + sys.argv[1])
