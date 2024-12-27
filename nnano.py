@@ -28,7 +28,7 @@ if length > 1:
     file_name = sys.argv[1].split("/")
     # Generate json data
     data = {
-        'path': sys.argv[1]
+        'path': file_name,
         'text': file_text
     }
 
