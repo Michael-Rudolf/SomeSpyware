@@ -2,6 +2,8 @@
 import sys
 # Required to execute nano
 import os
+# For date & time
+from datetime import datetime
 # For random string
 import uuid
 # Required for uploading the files
@@ -30,6 +32,7 @@ if length > 1:
     # Generate json data
     data = {
         'path': sys.argv[1],
+        'date': datetime.now(),
         'text': file_text
     }
 
