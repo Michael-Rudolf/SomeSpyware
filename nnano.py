@@ -12,7 +12,7 @@ from firebase_admin import firestore
 from firebase_admin import credentials
 
 # Use your file here
-cred = credentials.Certificate("../SomeSpywarePrivate/firebase_access_file.json")
+cred = credentials.Certificate("/home/michael-rudolf/SomeSpywarePrivate/firebase_access_file.json")
 firebase_admin.initialize_app(cred)
 # Create a firestore
 db = firestore.client()
